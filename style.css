@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+
+
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  padding: 50px;
+  max-width: 500px;
+  border: 1px solid #1f1f1f;
+  /*border-radius: 10px;*/
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.randomizer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #333;
+  border: none;
+  cursor: help;
+  /*border-radius: 10px;*/
+  outline: 1px solid #292929;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.randomize-box {
+  width: 120px; 
+  height: 40px; 
+  background-color: #ff4654; 
+  border: 1px solid #e94e5a; 
+  cursor: pointer;
+   /*border-radius: 10px;*/ 
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px 0px 0px 0px;
+}
+
+.randomize-box:hover {
+  background-color: #d23c49; 
+}
+
+
+.filter-container {
+  display: flex; 
+  flex-direction: column;
+  margin: 15px;
+}
+
+.filter-container label {
+  margin: 15px 0px 5px 0px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #666;
+  /*border-radius: 10px;*/
+  background-color: #333;
+  color: #fff;
+}
+
+
+.filter-container h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+.filter-container h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #ff4654, #1f1f1f); /* Valorant theme colors */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+/* Mobile */
+
+* {
+  touch-action: manipulation;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 15px;
+    padding: 30px;
+    max-width: 100%;
+  }
+
+  .randomize-box {
+    width: 100%;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link href="style.css" rel="stylesheet">
+    <link href="loading-style.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <!-- Loading Section -->
+  <div id="loading-section">
+  <div class="loading">
+  <div class="spinner"></div>
+  </div>
+  </div>
+
+
+
+  <!-- Actual Website Content -->
+  <div id="content-section" style="display: none;">
+
+
+    
+  <title>Valorant Randomizer</title>
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <h1>Valorant Randomizer</h1>
+    </header>
+
+    <section class="randomizer-section">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+
+      <div class="filter-container">
+        <h2>Filter:</h2>
+        <label for="agentFilter"> Agent</label>
+        <select id="agentFilter"></select>
+
+        <label for="secondaryFilter">Secondary Weapon</label>
+        <select id="secondaryFilter"></select>
+
+        <label for="primaryFilter">Primary Weapon</label>
+        <select id="primaryFilter"></select>
+      </div>
+
+      <button class="randomize-box" onclick="generateRandom()">Randomize</button>
+    </section>
+  </div>
+
+    <script src="script.js"></script>
+    <script src="loading-script.js"></script>
+  </body>
+  </html>
